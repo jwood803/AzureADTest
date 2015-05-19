@@ -45,7 +45,7 @@ namespace AzureADTest2
         {
             // Configure the HTTP request pipeline.
             // Add the console logger.
-            loggerfactory.AddConsole();
+            //loggerfactory.AddProvider(new DataStoreErrorLoggerProvider());
 
             // Add the following to the request pipeline only in development environment.
             if (string.Equals(env.EnvironmentName, "Development", StringComparison.OrdinalIgnoreCase))

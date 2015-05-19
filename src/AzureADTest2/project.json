@@ -23,8 +23,6 @@
         "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta4",
         "Microsoft.Framework.ConfigurationModel.UserSecrets": "1.0.0-beta4",
         "Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-beta4",
-        "Microsoft.Framework.Logging": "1.0.0-beta4",
-        "Microsoft.Framework.Logging.Console": "1.0.0-beta4",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta4",
         "Microsoft.AspNet.Security.OpenIdConnect": "1.0.0-beta3",
         "Microsoft.Owin.Security.Cookies": "3.0.1"
@@ -37,8 +35,7 @@
     },
 
     "frameworks": {
-        "dnx451": { },
-        "dnxcore50": { }
+        "dnx451": { }
     },
 
     "exclude": [
