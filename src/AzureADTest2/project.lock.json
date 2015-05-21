@@ -8,10 +8,6 @@
       "Microsoft.AspNet.Mvc >= 6.0.0-beta4",
       "Microsoft.AspNet.Mvc.TagHelpers >= 6.0.0-beta4",
       "Microsoft.AspNet.Authentication.Cookies >= 1.0.0-beta4",
-      "Microsoft.AspNet.Authentication.Facebook >= 1.0.0-beta4",
-      "Microsoft.AspNet.Authentication.Google >= 1.0.0-beta4",
-      "Microsoft.AspNet.Authentication.MicrosoftAccount >= 1.0.0-beta4",
-      "Microsoft.AspNet.Authentication.Twitter >= 1.0.0-beta4",
       "Microsoft.AspNet.Diagnostics >= 1.0.0-beta4",
       "Microsoft.AspNet.Diagnostics.Entity >= 7.0.0-beta4",
       "Microsoft.AspNet.Identity.EntityFramework >= 3.0.0-beta4",
@@ -23,7 +19,7 @@
       "Microsoft.Framework.ConfigurationModel.UserSecrets >= 1.0.0-beta4",
       "Microsoft.Framework.CodeGenerators.Mvc >= 1.0.0-beta4",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta4",
-      "Microsoft.AspNet.Security.OpenIdConnect >= 1.0.0-beta3",
+      "Microsoft.AspNet.Authentication.OpenIdConnect >= 1.0.0-beta4",
       "Microsoft.Owin.Security.Cookies >= 3.0.1"
     ],
     "DNX,Version=v4.5.1": []
@@ -395,171 +391,39 @@
         "lib/dnxcore50/Microsoft.AspNet.Authentication.Cookies.xml"
       ]
     },
-    "Microsoft.AspNet.Authentication.Facebook/1.0.0-beta4": {
+    "Microsoft.AspNet.Authentication.OpenIdConnect/1.0.0-beta4": {
       "serviceable": true,
-      "sha": "IH8KemP1j1iepCLQAZ+OhZjeHR1WWAolnkeNNYUAFXQXUZDAElejxWrtU5+OVz5rb5GZVCH4nj9svLJ7rh9JxQ==",
+      "sha": "T5pWKXdf0R770gNtgxhJKTNH0d2PeaaUmf2/LRZOCxCTiki5rbn5T+A9WsdVsoQuZE9VXKGYtLhnSNVrEoGNhQ==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
-            "Microsoft.AspNet.Authentication.OAuth": "1.0.0-beta4",
-            "Newtonsoft.Json": "6.0.6"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Facebook.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Facebook.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.Facebook.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.Facebook.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.Facebook.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Facebook.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Facebook.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Facebook.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Facebook.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.Google/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "sdwehyMZDbWvF/lV0yd/XIxMtWN3epUvJMcW9r+mZYQ3pAEiZLHQU//CDdXvZ2MuRDUXAFkfYjHCbQvuaCmdKw==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication.OAuth": "1.0.0-beta4"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Google.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Google.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.Google.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.Google.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.Google.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Google.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Google.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Google.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Google.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.MicrosoftAccount/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "ho/2XhYjtIb2VDO+JTTQWyyt5N9cL+qiEDenvdK5hSHxh3gUzZg2GGolAdN8mpntHjWb9lfai6d7eIczMW26TA==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication.OAuth": "1.0.0-beta4"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.MicrosoftAccount.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.MicrosoftAccount.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.MicrosoftAccount.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.MicrosoftAccount.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.MicrosoftAccount.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.MicrosoftAccount.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.OAuth/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "fOJ+3E6gT8+g3dku13hZEXbZog/Iqrz2dM9jGRtK4wdpB2AOQQ7PK/6cgjxT3m/79w8eeY7q+hhT00+p2DbcJQ==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.DataProtection": "1.0.0-beta4",
             "Microsoft.AspNet.Authentication": "1.0.0-beta4",
-            "Newtonsoft.Json": "6.0.6"
+            "Microsoft.IdentityModel.Protocol.Extensions": "2.0.0-beta4"
           },
           "frameworkAssemblies": [
-            "System.Net.Http.WebRequest",
             "System.Net.Http",
+            "System.Net.Http.WebRequest",
             "mscorlib",
             "System",
             "System.Core",
             "Microsoft.CSharp"
           ],
           "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.dll"
+            "lib/dnx451/Microsoft.AspNet.Authentication.OpenIdConnect.dll"
           ],
           "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.dll"
+            "lib/dnx451/Microsoft.AspNet.Authentication.OpenIdConnect.dll"
           ]
         }
       },
       "files": [
-        "Microsoft.AspNet.Authentication.OAuth.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.OAuth.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.OAuth.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.OAuth.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.OAuth.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.OAuth.xml"
-      ]
-    },
-    "Microsoft.AspNet.Authentication.Twitter/1.0.0-beta4": {
-      "serviceable": true,
-      "sha": "qwlssYBOxhuoL/oqU5HjCrO0a2ffBdKCqHBQsapVRy9xUtAD4pfuFeUV21n8O4H67bVeY5TlvQ7XM4cIIrTmfg==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Authentication": "1.0.0-beta4"
-          },
-          "frameworkAssemblies": [
-            "System.Net.Http.WebRequest",
-            "System.Net.Http",
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Twitter.dll"
-          ],
-          "compileAssemblies": [
-            "lib/dnx451/Microsoft.AspNet.Authentication.Twitter.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Authentication.Twitter.1.0.0-beta4.nupkg",
-        "Microsoft.AspNet.Authentication.Twitter.1.0.0-beta4.nupkg.sha512",
-        "Microsoft.AspNet.Authentication.Twitter.nuspec",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Twitter.dll",
-        "lib/dnx451/Microsoft.AspNet.Authentication.Twitter.xml",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Twitter.dll",
-        "lib/dnxcore50/Microsoft.AspNet.Authentication.Twitter.xml"
+        "Microsoft.AspNet.Authentication.OpenIdConnect.1.0.0-beta4.nupkg",
+        "Microsoft.AspNet.Authentication.OpenIdConnect.1.0.0-beta4.nupkg.sha512",
+        "Microsoft.AspNet.Authentication.OpenIdConnect.nuspec",
+        "lib/dnx451/Microsoft.AspNet.Authentication.OpenIdConnect.dll",
+        "lib/dnx451/Microsoft.AspNet.Authentication.OpenIdConnect.xml",
+        "lib/dnxcore50/Microsoft.AspNet.Authentication.OpenIdConnect.dll",
+        "lib/dnxcore50/Microsoft.AspNet.Authentication.OpenIdConnect.xml"
       ]
     },
     "Microsoft.AspNet.Authorization/1.0.0-beta4": {
@@ -1702,40 +1566,6 @@
         "lib/net45/Microsoft.AspNet.Razor.Runtime.xml"
       ]
     },
-    "Microsoft.AspNet.RequestContainer/1.0.0-beta3": {
-      "serviceable": false,
-      "sha": "a7wmjqRWfXml2op26G2oRNPMgZU5rufCRk3I1vsUfrKqmfxkefzZfGfihK4DaWFnvKG8xFvHm09sxRSG0GfIjg==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Http.Extensions": "1.0.0-beta3",
-            "Microsoft.AspNet.Hosting": "1.0.0-beta3",
-            "Microsoft.Framework.OptionsModel": "1.0.0-beta3"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.RequestContainer.dll"
-          ],
-          "compileAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.RequestContainer.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.RequestContainer.1.0.0-beta3.nupkg",
-        "Microsoft.AspNet.RequestContainer.1.0.0-beta3.nupkg.sha512",
-        "Microsoft.AspNet.RequestContainer.nuspec",
-        "lib/aspnet50/Microsoft.AspNet.RequestContainer.dll",
-        "lib/aspnet50/Microsoft.AspNet.RequestContainer.xml",
-        "lib/aspnetcore50/Microsoft.AspNet.RequestContainer.dll",
-        "lib/aspnetcore50/Microsoft.AspNet.RequestContainer.xml"
-      ]
-    },
     "Microsoft.AspNet.Routing/1.0.0-beta4": {
       "serviceable": true,
       "sha": "h2/S9nkGmSQT/gYZEzfCagdg66jLyZEV7m9j84sZ9teXOvUfynxg7Hcp+wk5kDwPyAwFuk+31/ya2oWwRD3RuA==",
@@ -1768,113 +1598,6 @@
         "lib/dnx451/Microsoft.AspNet.Routing.xml",
         "lib/dnxcore50/Microsoft.AspNet.Routing.dll",
         "lib/dnxcore50/Microsoft.AspNet.Routing.xml"
-      ]
-    },
-    "Microsoft.AspNet.Security/1.0.0-beta3": {
-      "serviceable": false,
-      "sha": "x0uCiUBboEDWNEKCKUOxFZD8y9qd87Y7BTc9iNw6Xh9PY9tYZgEg9PKs7I8G8jgMcWpD861hhVFdaNRFjIkT1A==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.RequestContainer": "1.0.0-beta3",
-            "Microsoft.AspNet.Http.Core": "1.0.0-beta3",
-            "Microsoft.AspNet.Security.DataProtection": "1.0.0-beta3",
-            "Microsoft.Framework.Logging": "1.0.0-beta3"
-          },
-          "frameworkAssemblies": [
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.Security.dll"
-          ],
-          "compileAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.Security.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Security.1.0.0-beta3.nupkg",
-        "Microsoft.AspNet.Security.1.0.0-beta3.nupkg.sha512",
-        "Microsoft.AspNet.Security.nuspec",
-        "lib/aspnet50/Microsoft.AspNet.Security.dll",
-        "lib/aspnet50/Microsoft.AspNet.Security.xml",
-        "lib/aspnetcore50/Microsoft.AspNet.Security.dll",
-        "lib/aspnetcore50/Microsoft.AspNet.Security.xml"
-      ]
-    },
-    "Microsoft.AspNet.Security.DataProtection/1.0.0-beta3": {
-      "serviceable": false,
-      "sha": "DPR3hJbVavQbDb4uahbils8Z3NfeDIQyw7A4uOy50/jAFMxEpJ4v9BShAJPVkoUD4XmO/I0wxw1prvJJr00zHQ==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.Framework.DependencyInjection": "1.0.0-beta3",
-            "Microsoft.Framework.OptionsModel": "1.0.0-beta3"
-          },
-          "frameworkAssemblies": [
-            "System.Security",
-            "System.Xml",
-            "System.Xml.Linq",
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.Security.DataProtection.dll"
-          ],
-          "compileAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.Security.DataProtection.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Security.DataProtection.1.0.0-beta3.nupkg",
-        "Microsoft.AspNet.Security.DataProtection.1.0.0-beta3.nupkg.sha512",
-        "Microsoft.AspNet.Security.DataProtection.nuspec",
-        "lib/aspnet50/Microsoft.AspNet.Security.DataProtection.dll",
-        "lib/aspnet50/Microsoft.AspNet.Security.DataProtection.xml",
-        "lib/aspnetcore50/Microsoft.AspNet.Security.DataProtection.dll",
-        "lib/aspnetcore50/Microsoft.AspNet.Security.DataProtection.xml",
-        "lib/net451/Microsoft.AspNet.Security.DataProtection.dll",
-        "lib/net451/Microsoft.AspNet.Security.DataProtection.xml"
-      ]
-    },
-    "Microsoft.AspNet.Security.OpenIdConnect/1.0.0-beta3": {
-      "serviceable": false,
-      "sha": "+hxpwlKETbZxxNt7BEJ+nB0IdVlLujApDNSClqtPkg0hKYjlb8qHZN/2XComggZHXHs7if3et52iPdPisjW0zg==",
-      "frameworks": {
-        "DNX,Version=v4.5.1": {
-          "dependencies": {
-            "Microsoft.AspNet.Security": "1.0.0-beta3",
-            "Microsoft.IdentityModel.Protocol.Extensions": "2.0.0-beta1"
-          },
-          "frameworkAssemblies": [
-            "System.Net.Http.WebRequest",
-            "mscorlib",
-            "System",
-            "System.Core",
-            "Microsoft.CSharp"
-          ],
-          "runtimeAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.Security.OpenIdConnect.dll"
-          ],
-          "compileAssemblies": [
-            "lib/aspnet50/Microsoft.AspNet.Security.OpenIdConnect.dll"
-          ]
-        }
-      },
-      "files": [
-        "Microsoft.AspNet.Security.OpenIdConnect.1.0.0-beta3.nupkg",
-        "Microsoft.AspNet.Security.OpenIdConnect.1.0.0-beta3.nupkg.sha512",
-        "Microsoft.AspNet.Security.OpenIdConnect.nuspec",
-        "lib/aspnet50/Microsoft.AspNet.Security.OpenIdConnect.dll",
-        "lib/aspnet50/Microsoft.AspNet.Security.OpenIdConnect.xml",
-        "lib/aspnetcore50/Microsoft.AspNet.Security.OpenIdConnect.dll",
-        "lib/aspnetcore50/Microsoft.AspNet.Security.OpenIdConnect.xml"
       ]
     },
     "Microsoft.AspNet.Server.IIS/1.0.0-beta4": {
@@ -3072,14 +2795,46 @@
         "lib/net45/Microsoft.Framework.WebEncoders.Core.xml"
       ]
     },
-    "Microsoft.IdentityModel.Protocol.Extensions/2.0.0-beta1-02051325": {
+    "Microsoft.IdentityModel.Logging/1.0.0-beta4-03310920": {
       "serviceable": true,
-      "sha": "uk8LyZ95vjRq+G2Mm/IyLxydkRSolUx56V6ondXfXJm2PXQNTWqYw4FGAW7434bDrDl0xFkObiQkwwYFj224Fw==",
+      "sha": "sSFrrb8+OdgE8tY/ZQGpz9yE3BcEc+Hz4ACGdN7RdFW0FT/U4Tt7faVxIjAYEgMF5PoumnaWUtgxNY2ct/NlNQ==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "System.Diagnostics.Tracing": "4.0.20-beta-22727"
+          },
+          "frameworkAssemblies": [
+            "mscorlib",
+            "System",
+            "System.Core",
+            "Microsoft.CSharp"
+          ],
+          "runtimeAssemblies": [
+            "lib/dnx451/Microsoft.IdentityModel.Logging.dll"
+          ],
+          "compileAssemblies": [
+            "lib/dnx451/Microsoft.IdentityModel.Logging.dll"
+          ]
+        }
+      },
+      "files": [
+        "Microsoft.IdentityModel.Logging.1.0.0-beta4-03310920.nupkg",
+        "Microsoft.IdentityModel.Logging.1.0.0-beta4-03310920.nupkg.sha512",
+        "Microsoft.IdentityModel.Logging.nuspec",
+        "lib/dnx451/Microsoft.IdentityModel.Logging.dll",
+        "lib/dnx451/Microsoft.IdentityModel.Logging.xml",
+        "lib/dnxcore50/Microsoft.IdentityModel.Logging.dll",
+        "lib/dnxcore50/Microsoft.IdentityModel.Logging.xml"
+      ]
+    },
+    "Microsoft.IdentityModel.Protocol.Extensions/2.0.0-beta4-03310920": {
+      "serviceable": true,
+      "sha": "Ywm/FIaDQdVOQcs1Kz5O8YxXcWk0tKL4y+3XIkRCifbz801Qj6cBjNAFd1LCOd6FsOQIZIMHMjGLUTuiXXwe7Q==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
             "Newtonsoft.Json": "6.0.6",
-            "System.IdentityModel.Tokens": "5.0.0-beta1-02051325"
+            "System.IdentityModel.Tokens": "5.0.0-beta4-03310920"
           },
           "frameworkAssemblies": [
             "System.Net.Http",
@@ -3090,21 +2845,21 @@
             "Microsoft.CSharp"
           ],
           "runtimeAssemblies": [
-            "lib/aspnet50/Microsoft.IdentityModel.Protocol.Extensions.dll"
+            "lib/dnx451/Microsoft.IdentityModel.Protocol.Extensions.dll"
           ],
           "compileAssemblies": [
-            "lib/aspnet50/Microsoft.IdentityModel.Protocol.Extensions.dll"
+            "lib/dnx451/Microsoft.IdentityModel.Protocol.Extensions.dll"
           ]
         }
       },
       "files": [
-        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta1-02051325.nupkg",
-        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta1-02051325.nupkg.sha512",
+        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta4-03310920.nupkg",
+        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta4-03310920.nupkg.sha512",
         "Microsoft.IdentityModel.Protocol.Extensions.nuspec",
-        "lib/aspnet50/Microsoft.IdentityModel.Protocol.Extensions.dll",
-        "lib/aspnet50/Microsoft.IdentityModel.Protocol.Extensions.xml",
-        "lib/aspnetcore50/Microsoft.IdentityModel.Protocol.Extensions.dll",
-        "lib/aspnetcore50/Microsoft.IdentityModel.Protocol.Extensions.xml"
+        "lib/dnx451/Microsoft.IdentityModel.Protocol.Extensions.dll",
+        "lib/dnx451/Microsoft.IdentityModel.Protocol.Extensions.xml",
+        "lib/dnxcore50/Microsoft.IdentityModel.Protocol.Extensions.dll",
+        "lib/dnxcore50/Microsoft.IdentityModel.Protocol.Extensions.xml"
       ]
     },
     "Microsoft.Net.Http.Headers/1.0.0-beta4": {
@@ -3452,13 +3207,42 @@
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml"
       ]
     },
-    "System.IdentityModel.Tokens/5.0.0-beta1-02051325": {
-      "serviceable": true,
-      "sha": "xOT7+ys0Fq3JA8clfODoQzUr7vOx5YhsOaUqPpX8eTzlQKTW2JCAVf/8wffHUxxPPSR8nVw8Ezs33Vq1xRWgzw==",
+    "System.Diagnostics.Tracing/4.0.20-beta-22727": {
+      "serviceable": false,
+      "sha": "Pcc/gMSS5s0U0vowl+KTXVpVR2WFdOkYNkYFZ2tVSK2yvMo9q6E6tvu1yJSj9M54yYe70qJJI6YiZrCjNWD83A==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
-            "Newtonsoft.Json": "6.0.6"
+            "System.Runtime": "4.0.0-beta-22727"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net45/System.Diagnostics.Tracing.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net45/System.Diagnostics.Tracing.dll"
+          ]
+        }
+      },
+      "files": [
+        "License.rtf",
+        "System.Diagnostics.Tracing.4.0.20-beta-22727.nupkg",
+        "System.Diagnostics.Tracing.4.0.20-beta-22727.nupkg.sha512",
+        "System.Diagnostics.Tracing.nuspec",
+        "lib/aspnetcore50/System.Diagnostics.Tracing.dll",
+        "lib/contract/System.Diagnostics.Tracing.dll",
+        "lib/net45/System.Diagnostics.Tracing.dll",
+        "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Diagnostics.Tracing.dll"
+      ]
+    },
+    "System.IdentityModel.Tokens/5.0.0-beta4-03310920": {
+      "serviceable": true,
+      "sha": "kBpJ3k4D0NQ/skl01HeCoLcqkiGJdkgEvxi4XNfCdxf2bELyU1WK06WwPM7oTfPN4F75gCQO00eLJGqINM0ZMQ==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Newtonsoft.Json": "6.0.6",
+            "Microsoft.IdentityModel.Logging": "1.0.0-beta4-03310920"
           },
           "frameworkAssemblies": [
             "mscorlib",
@@ -3467,21 +3251,21 @@
             "Microsoft.CSharp"
           ],
           "runtimeAssemblies": [
-            "lib/aspnet50/System.IdentityModel.Tokens.dll"
+            "lib/dnx451/System.IdentityModel.Tokens.dll"
           ],
           "compileAssemblies": [
-            "lib/aspnet50/System.IdentityModel.Tokens.dll"
+            "lib/dnx451/System.IdentityModel.Tokens.dll"
           ]
         }
       },
       "files": [
-        "System.IdentityModel.Tokens.5.0.0-beta1-02051325.nupkg",
-        "System.IdentityModel.Tokens.5.0.0-beta1-02051325.nupkg.sha512",
+        "System.IdentityModel.Tokens.5.0.0-beta4-03310920.nupkg",
+        "System.IdentityModel.Tokens.5.0.0-beta4-03310920.nupkg.sha512",
         "System.IdentityModel.Tokens.nuspec",
-        "lib/aspnet50/System.IdentityModel.Tokens.dll",
-        "lib/aspnet50/System.IdentityModel.Tokens.xml",
-        "lib/aspnetcore50/System.IdentityModel.Tokens.dll",
-        "lib/aspnetcore50/System.IdentityModel.Tokens.xml"
+        "lib/dnx451/System.IdentityModel.Tokens.dll",
+        "lib/dnx451/System.IdentityModel.Tokens.xml",
+        "lib/dnxcore50/System.IdentityModel.Tokens.dll",
+        "lib/dnxcore50/System.IdentityModel.Tokens.xml"
       ]
     },
     "System.IO/4.0.10-beta-22816": {

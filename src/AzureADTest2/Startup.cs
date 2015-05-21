@@ -5,12 +5,11 @@ using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Diagnostics;
 using Microsoft.AspNet.Diagnostics.Entity;
 using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Security;
-using Microsoft.AspNet.Security.Notifications;
-using Microsoft.AspNet.Security.OpenIdConnect;
+using Microsoft.AspNet.Authentication;
+using Microsoft.AspNet.Authentication.Notifications;
+using Microsoft.AspNet.Authentication.OpenIdConnect;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
-using Microsoft.Framework.Logging;
 using Microsoft.IdentityModel.Protocols;
 
 namespace AzureADTest2
@@ -36,12 +35,12 @@ namespace AzureADTest2
             // OpenID Connect Authentication Requires Cookie Auth
             services.Configure<ExternalAuthenticationOptions>(options =>
             {
-                options.SignInAsAuthenticationType = CookieAuthenticationDefaults.AuthenticationType;
+                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationType;
             });
         }
 
         // Configure is called after ConfigureServices is called.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             // Configure the HTTP request pipeline.
             // Add the console logger.

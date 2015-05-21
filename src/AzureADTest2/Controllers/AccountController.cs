@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin.Security.Cookies;
 using Microsoft.AspNet.Http.Authentication;
 using Microsoft.AspNet.Mvc;
-using Microsoft.AspNet.Security.OpenIdConnect;
+using Microsoft.AspNet.Authentication.OpenIdConnect;
 
 namespace AzureADTest2.Controllers
 {
@@ -12,7 +12,7 @@ namespace AzureADTest2.Controllers
         public IActionResult Login(string returnUrl = null)
         {
             if (Context.User == null || !Context.User.Identity.IsAuthenticated)
-                return new ChallengeResult(OpenIdConnectAuthenticationDefaults.AuthenticationType, new AuthenticationProperties { RedirectUri = "/" });
+                return new ChallengeResult(OpenIdConnectAuthenticationDefaults.AuthenticationScheme, new AuthenticationProperties { RedirectUri = "/" });
             return RedirectToAction("Index", "Home");
         }
 
