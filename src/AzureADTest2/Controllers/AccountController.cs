@@ -21,7 +21,11 @@ namespace AzureADTest2.Controllers
         public IActionResult LogOff()
         {
             if (Context.User.Identity.IsAuthenticated)
+            {
+                Context.Response.SignOut(OpenIdConnectAuthenticationDefaults.AuthenticationScheme);
                 Context.Response.SignOut(CookieAuthenticationDefaults.AuthenticationType);
+            }
+            
             return RedirectToAction("Index", "Home");
         }
     }

@@ -11,6 +11,7 @@ using Microsoft.AspNet.Authentication.OpenIdConnect;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.IdentityModel.Protocols;
+using Microsoft.Framework.Logging;
 
 namespace AzureADTest2
 {
@@ -40,11 +41,11 @@ namespace AzureADTest2
         }
 
         // Configure is called after ConfigureServices is called.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerfactory)
         {
             // Configure the HTTP request pipeline.
             // Add the console logger.
-            //loggerfactory.AddProvider(new DataStoreErrorLoggerProvider());
+            loggerfactory.AddProvider(new DataStoreErrorLoggerProvider());
 
             // Add the following to the request pipeline only in development environment.
             if (string.Equals(env.EnvironmentName, "Development", StringComparison.OrdinalIgnoreCase))
@@ -64,16 +65,17 @@ namespace AzureADTest2
             app.UseStaticFiles();
 
             // Configure the OWIN Pipeline to use OpenID Connect Authentication
-            app.UseCookieAuthentication(options => { });
+            app.UseCookieAuthentication(options => { options.AutomaticAuthentication = true; });
 
             app.UseOpenIdConnectAuthentication(options =>
             {
                 options.ClientId = Configuration.Get("AzureAd:ClientId");
                 options.Authority = String.Format(Configuration.Get("AzureAd:AadInstance"), Configuration.Get("AzureAd:Tenant"));
                 options.PostLogoutRedirectUri = Configuration.Get("AzureAd:PostLogoutRedirectUri");
+                options.AutomaticAuthentication = true;
                 options.Notifications = new OpenIdConnectAuthenticationNotifications
                 {
-                    AuthenticationFailed = OnAuthenticationFailed,
+                    AuthenticationFailed = OnAuthenticationFailed
                 };
             });
 

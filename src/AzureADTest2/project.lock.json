@@ -20,7 +20,8 @@
       "Microsoft.Framework.CodeGenerators.Mvc >= 1.0.0-beta4",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-beta4",
       "Microsoft.AspNet.Authentication.OpenIdConnect >= 1.0.0-beta4",
-      "Microsoft.Owin.Security.Cookies >= 3.0.1"
+      "Microsoft.Owin.Security.Cookies >= 3.0.1",
+      "Microsoft.IdentityModel.Clients.ActiveDirectory >= 2.16.204221202"
     ],
     "DNX,Version=v4.5.1": []
   },
@@ -2795,13 +2796,45 @@
         "lib/net45/Microsoft.Framework.WebEncoders.Core.xml"
       ]
     },
-    "Microsoft.IdentityModel.Logging/1.0.0-beta4-03310920": {
+    "Microsoft.IdentityModel.Clients.ActiveDirectory/2.16.204221202": {
+      "serviceable": false,
+      "sha": "BHee/BcnVE/W3ikoHTtoOgmfvQG2hLZtcoNrxLj0pEjjMj1Cvg0pYM2LK4y3RvqCTvVo8Y6lxdhIcbFCATHoww==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+            "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+            "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll"
+          ]
+        }
+      },
+      "files": [
+        "Microsoft.IdentityModel.Clients.ActiveDirectory.2.16.204221202.nupkg",
+        "Microsoft.IdentityModel.Clients.ActiveDirectory.2.16.204221202.nupkg.sha512",
+        "Microsoft.IdentityModel.Clients.ActiveDirectory.nuspec",
+        "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll",
+        "lib/net45/Microsoft.IdentityModel.Clients.ActiveDirectory.XML",
+        "lib/netcore45/Microsoft.IdentityModel.Clients.ActiveDirectory.winmd",
+        "lib/netcore45/Microsoft.IdentityModel.Clients.ActiveDirectory.XML",
+        "lib/wp/Microsoft.IdentityModel.Clients.ActiveDirectory.dll",
+        "lib/wp/Microsoft.IdentityModel.Clients.ActiveDirectory.XML",
+        "lib/wpa/Microsoft.IdentityModel.Clients.ActiveDirectory.winmd",
+        "lib/wpa/Microsoft.IdentityModel.Clients.ActiveDirectory.XML"
+      ]
+    },
+    "Microsoft.IdentityModel.Logging/1.0.0-beta4-204171524": {
       "serviceable": true,
-      "sha": "sSFrrb8+OdgE8tY/ZQGpz9yE3BcEc+Hz4ACGdN7RdFW0FT/U4Tt7faVxIjAYEgMF5PoumnaWUtgxNY2ct/NlNQ==",
+      "sha": "aw7aVggIFyHVZzdnW+jW+blgPAfdT4RxITEXeV9dUU1CkZZc5O4PfE9+7tNbMyGurL9yfsrLqyx2RsPhxrI87A==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
-            "System.Diagnostics.Tracing": "4.0.20-beta-22727"
+            "System.Diagnostics.Tracing": "4.0.20-beta-22816"
           },
           "frameworkAssemblies": [
             "mscorlib",
@@ -2818,8 +2851,8 @@
         }
       },
       "files": [
-        "Microsoft.IdentityModel.Logging.1.0.0-beta4-03310920.nupkg",
-        "Microsoft.IdentityModel.Logging.1.0.0-beta4-03310920.nupkg.sha512",
+        "Microsoft.IdentityModel.Logging.1.0.0-beta4-204171524.nupkg",
+        "Microsoft.IdentityModel.Logging.1.0.0-beta4-204171524.nupkg.sha512",
         "Microsoft.IdentityModel.Logging.nuspec",
         "lib/dnx451/Microsoft.IdentityModel.Logging.dll",
         "lib/dnx451/Microsoft.IdentityModel.Logging.xml",
@@ -2827,14 +2860,15 @@
         "lib/dnxcore50/Microsoft.IdentityModel.Logging.xml"
       ]
     },
-    "Microsoft.IdentityModel.Protocol.Extensions/2.0.0-beta4-03310920": {
+    "Microsoft.IdentityModel.Protocol.Extensions/2.0.0-beta4-204171524": {
       "serviceable": true,
-      "sha": "Ywm/FIaDQdVOQcs1Kz5O8YxXcWk0tKL4y+3XIkRCifbz801Qj6cBjNAFd1LCOd6FsOQIZIMHMjGLUTuiXXwe7Q==",
+      "sha": "zvkCxflQh3wERT9me/dhUr5UdOFivDJGzVmexLAojTnJwHS5L5R5Srp41TlTIqCDkAZEzBAUlj68m3XoU0oM/Q==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
             "Newtonsoft.Json": "6.0.6",
-            "System.IdentityModel.Tokens": "5.0.0-beta4-03310920"
+            "System.IdentityModel.Tokens": "5.0.0-beta4-204171524",
+            "Microsoft.IdentityModel.Logging": "1.0.0-beta4-204171524"
           },
           "frameworkAssemblies": [
             "System.Net.Http",
@@ -2853,8 +2887,8 @@
         }
       },
       "files": [
-        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta4-03310920.nupkg",
-        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta4-03310920.nupkg.sha512",
+        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta4-204171524.nupkg",
+        "Microsoft.IdentityModel.Protocol.Extensions.2.0.0-beta4-204171524.nupkg.sha512",
         "Microsoft.IdentityModel.Protocol.Extensions.nuspec",
         "lib/dnx451/Microsoft.IdentityModel.Protocol.Extensions.dll",
         "lib/dnx451/Microsoft.IdentityModel.Protocol.Extensions.xml",
@@ -3207,15 +3241,17 @@
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml"
       ]
     },
-    "System.Diagnostics.Tracing/4.0.20-beta-22727": {
+    "System.Diagnostics.Tracing/4.0.20-beta-22816": {
       "serviceable": false,
-      "sha": "Pcc/gMSS5s0U0vowl+KTXVpVR2WFdOkYNkYFZ2tVSK2yvMo9q6E6tvu1yJSj9M54yYe70qJJI6YiZrCjNWD83A==",
+      "sha": "QhlAuKzQaBpb5kwT//6+MKYlmofG8QLurQvKyVF89ZTLLd3WhXHM5QxWNcjyJ9OA/svNPuqW3ee8Hw9lhzcnGQ==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
-            "System.Runtime": "4.0.0-beta-22727"
+            "System.Runtime": "4.0.20-beta-22816"
           },
-          "frameworkAssemblies": [],
+          "frameworkAssemblies": [
+            "mscorlib"
+          ],
           "runtimeAssemblies": [
             "lib/net45/System.Diagnostics.Tracing.dll"
           ],
@@ -3226,8 +3262,8 @@
       },
       "files": [
         "License.rtf",
-        "System.Diagnostics.Tracing.4.0.20-beta-22727.nupkg",
-        "System.Diagnostics.Tracing.4.0.20-beta-22727.nupkg.sha512",
+        "System.Diagnostics.Tracing.4.0.20-beta-22816.nupkg",
+        "System.Diagnostics.Tracing.4.0.20-beta-22816.nupkg.sha512",
         "System.Diagnostics.Tracing.nuspec",
         "lib/aspnetcore50/System.Diagnostics.Tracing.dll",
         "lib/contract/System.Diagnostics.Tracing.dll",
@@ -3235,14 +3271,14 @@
         "lib/portable-wpa81+wp80+win80+net45+aspnetcore50/System.Diagnostics.Tracing.dll"
       ]
     },
-    "System.IdentityModel.Tokens/5.0.0-beta4-03310920": {
+    "System.IdentityModel.Tokens/5.0.0-beta4-204171524": {
       "serviceable": true,
-      "sha": "kBpJ3k4D0NQ/skl01HeCoLcqkiGJdkgEvxi4XNfCdxf2bELyU1WK06WwPM7oTfPN4F75gCQO00eLJGqINM0ZMQ==",
+      "sha": "r/NNB3urUIkhDzzEv8ZVIrykLK9lgF3TlMARA1oh3IwCJAW0BT07hMHJpAI/ZsLPQWRCPx3fhfnDJ0qqmCqrIw==",
       "frameworks": {
         "DNX,Version=v4.5.1": {
           "dependencies": {
             "Newtonsoft.Json": "6.0.6",
-            "Microsoft.IdentityModel.Logging": "1.0.0-beta4-03310920"
+            "Microsoft.IdentityModel.Logging": "1.0.0-beta4-204171524"
           },
           "frameworkAssemblies": [
             "mscorlib",
@@ -3259,8 +3295,8 @@
         }
       },
       "files": [
-        "System.IdentityModel.Tokens.5.0.0-beta4-03310920.nupkg",
-        "System.IdentityModel.Tokens.5.0.0-beta4-03310920.nupkg.sha512",
+        "System.IdentityModel.Tokens.5.0.0-beta4-204171524.nupkg",
+        "System.IdentityModel.Tokens.5.0.0-beta4-204171524.nupkg.sha512",
         "System.IdentityModel.Tokens.nuspec",
         "lib/dnx451/System.IdentityModel.Tokens.dll",
         "lib/dnx451/System.IdentityModel.Tokens.xml",
