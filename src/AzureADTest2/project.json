@@ -21,7 +21,8 @@
         "Microsoft.Framework.CodeGenerators.Mvc": "1.0.0-beta4",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta4",
         "Microsoft.AspNet.Authentication.OpenIdConnect": "1.0.0-beta4",
-        "Microsoft.Owin.Security.Cookies": "3.0.1"
+        "Microsoft.Owin.Security.Cookies": "3.0.1",
+        "Microsoft.IdentityModel.Clients.ActiveDirectory": "2.16.204221202"
     },
 
     "commands": {

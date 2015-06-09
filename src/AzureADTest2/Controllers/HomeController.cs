@@ -6,11 +6,13 @@ namespace AzureADTest2.Controllers
     [Authorize]
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize]
         public IActionResult About()
         {
             ViewBag.Message = "Your application description page.";
